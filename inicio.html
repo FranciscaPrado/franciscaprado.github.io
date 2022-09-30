@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VidaVerde</title>
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/estilo.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar fixed-top bg-light">
+            <a id="title" href="#" class="navbar-brand">
+                <img id="img" src="Img/Logo.png" alt="We share" loading="lazy" class="navbar-brand__img">
+                VIDA VERDE
+            </a>
+            <a class="navbar-brand" href="#"></a>
+            <nav class="navbar navbar-expand">
+                <div class="collapse navbar-collapse" id="opciones">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#myCarousel">
+                                INICIO
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="registrase.html">
+                                REGISTRATE
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="centros_de_reciclaje.html">
+                                CENTROS DE RECICLAJE
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                3ERRES DEL MEDIO AMBIENTE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="reducir.html">REDUCIR</a></li>
+                                <li><a class="dropdown-item" href="reutilizar.html">REUTILIZAR</a></li>
+                                <li><a class="dropdown-item" href="reciclar.html">RECICLAR</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">CERRAR</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </nav>
+        <div class="slideshow-container" id="myCarousel">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="img/text.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="img/frase (2).jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="img/frase1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="img/frase3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+        <div class="row">
+            <H1 style="color:green;">¿POR QUÉ ES IMPORTANTE CUIDAR EL PLANETA?</H1>
+            <dic id="foto" class="col-md-4">
+                <img src="img/img1.jfif" alt="">
+                <br><br><br><br>
+                <strong>Entre las principales razones para cuidar el medio ambiente podemos destacar las
+                    siguientes:</strong><br>
+                >Asegurar la supervivencia de la especie humana.<br>
+                >Favorecer la supervivencia y evolución del resto de seres vivos.<br>
+                >Permitir que haya equilibrio ecológico.<br>
+                >No hay un planeta B en el que podamos vivir como en la Tierra, por lo que es nuestro único hogar y el
+                de las futuras generaciones.
+            </dic>
+            <div id="texto" class="col-md-4">
+                Nuestro deber de cuidar el medio ambiente se basa principalmente en que el bienestar humano depende de
+                las buenas condiciones de nuestro mundo y su sistema.<br>
+                El medio ambiente, es la totalidad de espacios biológicos de la tierra junto con los seres vivos que los
+                habitan.
+                Estos entornos, se conforman por todos los componentes existentes en los espacios vitales, incluyendo
+                elementos naturales, artificiales, seres vivos e incluso variables intangibles, como los conceptos
+                sociales y culturales.<br>
+                El medio ambiente por su cuenta, suele mantenerse en equilibrio. Sin embargo, la enorme penetración
+                humana, producto de los avances tecnológicos que se han presentado sobre todo en los últimos dos siglos,
+                ha hecho que se presente un desbalance capaz de generar graves consecuencias.<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="img/img4.png" alt="">
+            </div>
+            <dic class="col-md-4" column-rule:6px double gray;>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <br>
+                <img id="afiche" src="img/afiche.jpg" alt="">
+            </dic>
+        </div>
+    </div>
+    <footer>
+        <img src="img/Logo.png" alt="" class="logo">
+        <div class="social-icons-container">
+            <a href="https://www.instagram.com/" class="social-icon"></a>
+            <a href="https://es-la.facebook.com/" class="social-icon"></a>
+            <a href="https://twitter.com/" class="social-icon"></a>
+        </div>
+        <span class="copyright">&copy;2022, VIDA VERDE</span>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

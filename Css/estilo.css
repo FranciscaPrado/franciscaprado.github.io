@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   margin: 0;
+   font-family:'Calibri';
+   text-align: justify;
+   position: relative; 
+   padding-bottom: 20em;
+   justify-content: center;
+   align-items: center;
+}
+
+#navbar{
+    font-family:'Calibri';
+}
+
+#title{
+    color:black;
+    font-size:large;
+}
+
+#img{
+    width: 10vh;
+}
+
+#img2{
+    height: 35vh;
+}
+
+
+#afiche{
+    width: 75vh;
+}
+
+#texto{
+    font-family:'Calibri';
+    color:black;
+    text-align: justify;
+    /*overflow: scroll;*/
+}
+
+#mapa{
+    width: 200vh;
+}
+
+footer{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em 0;
+    background-color:palegoldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.social-icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid black;
+    background-image: url(../img/instagram\ \(1\).svg);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+}
+
+.social-icon:hover{
+   background-color: #121212; 
+   filter: invert(1);
+}
+
+.social-icon:nth-of-type(2){
+    background-image: url(../img/facebook\ \(1\).svg);
+}
+
+.social-icon:nth-of-type(3){
+    background-image: url(../img/twitter.svg);
+}
+
+.copyright{
+    color:black;
+    opacity: 0.3;
+    text-align: center;
+}
+
+:root{
+    --colorTextos: palegoldenrod;
+}
+
+*,
+::before
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+
+#form{
+    background: azure;
+    padding: 40px 0;
+    box-shadow: 0 0 60px 0 #5e5d5d;
+    border-radius: 10px;
+}
+
+.form{
+   width: 100%; 
+   margin: auto;
+}
+
+form.grupo{
+    position: relative;
+    margin :45px;
+    background: palegoldenrod;
+}
+
+input{
+    background:none ;
+    color:  #49454567;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    color: #49454567;
+}
+
+label{
+    font-size: 16px;
+    position:unset;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+
+input:focus~label,
+input:valid~{
+    top: -14px;
+    font-size:12px;
+    color:palegoldenrod;
+}
+
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    transition: 0.3s ease width;
+    left: 0;
+}
+
+
+input:focus~.barra::before{
+    width: 100%;
+}
+
+button{
+    font-family: 'Calibri';
+    background: palegoldenrod;
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    overflow: scroll;
+    color: rgb(60, 86, 60);
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container{
+    padding: 2px 16px;
+}
+
+#papel{
+    size: 10vh;
+    border-radius: 5px 5px 0 0;
+}
+
+#plastico{
+    border-radius: 5px 5px 0 0;
+}
+
+#vidrio{
+    border-radius: 5px 5px 0 0;
+}
+
+#infografia{
+    height: 70vh;
+    width: 75vh;
+    position:center;
+}
+
+* {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 60s;
+}
+
+@keyframes fade {
+  from {opacity: .8}
+  to {opacity: 1}
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+.panel {
+    font-family: 'Calibri';
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    height: 300px;
+    overflow: scroll;
+}
+
+#acordeon{
+    background-image: url(../img/doodle-eco.jpg);
+    background-color:palegoldenrod;
+    background-repeat: no-repeat;
+    height: 60px;
+    color:#fff;
+    -webkit-text-stroke: 1.5px green;
+    padding: 10px;
+}
+
+#img2{
+    height: 90px;
+}
